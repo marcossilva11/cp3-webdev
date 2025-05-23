@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP3 - WebDev</title>
+    <style>
+        .tecnologia {
+            font-weight: bold;
+        }
+        .alimentos {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Cadastrar produto</h2>
+    <form action="#" id="formulario">
+        <label for="nome">Nome do produto: </label>
+        <input type="text" id="nome">
+        <br>
+        <br>
+        <label for="preco">Preço do produto: </label>
+        <input type="text" id="preco">
+        <br><br>
+        <label for="categoria">Categoria do produto: </label>
+        <select id="categoria">
+            <option value=""></option>
+            <option value="tecnologia">Tecnologia</option>
+            <option value="alimentos">Alimentos</option>
+            <option value="limpeza">Limpeza</option>
+        </select>
+        <br><br>
+        <button id="cadastrar">Cadastrar produto</button>
+    </form>
+    <p id="mensagem"></p>
+    <br>
+    <h2>Produtos</h2>
+    <ul id="lista-produtos"></ul>
+</body>
+<script src="./app.js"></script>
+
+</html>
