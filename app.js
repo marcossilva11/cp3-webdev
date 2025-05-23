@@ -18,8 +18,7 @@ btn.addEventListener('click', (event) => {
         return
     }
 
-    preco = preco.replace(',', '.')
-    const precoFormatado = parseFloat(preco)
+    let precoFormatado = parseFloat(preco)
 
     if (isNaN(precoFormatado)) {
         mensagem.textContent = 'Preço inválido, deve ser um número!'
@@ -43,5 +42,3 @@ btn.addEventListener('click', (event) => {
 
     formulario.reset()
 })
-
-
